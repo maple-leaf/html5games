@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/tweenjs/build/tween.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <h1>Rubik's cube</h1>
+    <h2>Inspired by <a href="http://www.html5rubik.com/tutorial/">http://www.html5rubik.com/tutorial/</a></h2>
+    <p>Tip: click and hold left button of mouse and move to rotate</p>
+    <div id="rubik-viewport">
+      <div id="rubik">
+        <!-- UP FACE -->            
+            <!-- LEFT COLUMN (L)  -->                
+            <div id="utl" class="red cubie">U1</div>
+            <div id="ucl" class="red cubie">U2</div>
+            <div id="ubl" class="red cubie">U3</div>
+            <!-- CENTER COLUMN (C)  -->            
+            <div id="utc" class="red cubie">U4</div>
+            <div id="ucc" class="red cubie">U5</div>
+            <div id="ubc" class="red cubie">U6</div>
+            <!-- RIGHT COLUMN (R)  -->
+            <div id="utr" class="red cubie">U7</div>
+            <div id="ucr" class="red cubie">U8</div>
+            <div id="ubr" class="red cubie">U9</div>
+        <!-- END UP FACE -->  
+
+        <!-- FRONT FACE -->
+            <!-- LEFT COLUMN (L)  -->                
+            <div id="ftl" class="yellow cubie">F1</div>
+            <div id="fcl" class="yellow cubie">F2</div>
+            <div id="fbl" class="yellow cubie">F3</div>
+            <!-- CENTER COLUMN (C)  -->            
+            <div id="ftc" class="yellow cubie">F4</div>
+            <div id="fcc" class="yellow cubie">F5</div>
+            <div id="fbc" class="yellow cubie">F6</div>
+            <!-- RIGHT COLUMN (R)  -->
+            <div id="ftr" class="yellow cubie">F7</div>
+            <div id="fcr" class="yellow cubie">F8</div>
+            <div id="fbr" class="yellow cubie">F9</div>
+        <!-- END FRONT FACE -->
+        
+        <!--DOWN FACE -->
+            <!-- LEFT COLUMN (L)  -->                
+            <div id="dtl" class="purple cubie">D1</div>
+            <div id="dcl" class="purple cubie">D2</div>
+            <div id="dbl" class="purple cubie">D3</div>
+            <!-- CENTER COLUMN (C)  -->                
+            <div id="dtc" class="purple cubie">D4</div>
+            <div id="dcc" class="purple cubie">D5</div>
+            <div id="dbc" class="purple cubie">D6</div>
+            <!-- RIGHT COLUMN (R)  -->        
+            <div id="dtr" class="purple cubie">D7</div>
+            <div id="dcr" class="purple cubie">D8</div>
+            <div id="dbr" class="purple cubie">D9</div>
+        <!-- END DOWN FACE -->
+        
+        <!--BACK FACE -->    
+            <!-- LEFT COLUMN (L)  -->           
+            <div id="btl" class="green cubie">B1</div>
+            <div id="bcl" class="green cubie">B2</div>
+            <div id="bbl" class="green cubie">B3</div>
+            <!-- CENTER COLUMN (C)  -->           
+            <div id="btc" class="green cubie">B4</div>
+            <div id="bcc" class="green cubie">B5</div>
+            <div id="bbc" class="green cubie">B6</div>
+            <!-- RIGHT COLUMN (R)  -->    
+            <div id="btr" class="green cubie">B7</div>
+            <div id="bcr" class="green cubie">B8</div>
+            <div id="bbr" class="green cubie">B9</div>
+        <!--END BOTTOM FACE --> 
+        
+        <!--LEFT FACE -->
+            <!-- LEFT COLUMN (L)  -->           
+            <div id="ltl" class="blue cubie">L1</div>
+            <div id="lcl" class="blue cubie">L2</div>
+            <div id="lbl" class="blue cubie">L3</div>
+            <!-- CENTER COLUMN (C)  -->  
+            <div id="ltc" class="blue cubie">L4</div>
+            <div id="lcc" class="blue cubie">L5</div>
+            <div id="lbc" class="blue cubie">L6</div>
+            <!-- RIGHT COLUMN (R)  -->    
+            <div id="ltr" class="blue cubie">L7</div>
+            <div id="lcr" class="blue cubie">L8</div>
+            <div id="lbr" class="blue cubie">L9</div>
+        <!--END LEFT FACE -->   
+        
+        <!--RIGHT FACE -->
+            <!-- LEFT COLUMN (L)  -->           
+            <div id="rtl" class="orange cubie">R1</div>
+            <div id="rcl" class="orange cubie">R2</div>
+            <div id="rbl" class="orange cubie">R3</div>
+            <!-- CENTER COLUMN (C)  -->  
+            <div id="rtc" class="orange cubie">R4</div>
+            <div id="rcc" class="orange cubie">R5</div>
+            <div id="rbc" class="orange cubie">R6</div>
+            <!-- RIGHT COLUMN (R)  -->    
+            <div id="rtr" class="orange cubie">R7</div>
+            <div id="rcr" class="orange cubie">R8</div>
+            <div id="rbr" class="orange cubie">R9</div>
+        <!--END LEFT FACE -->
+      </div>
+    </div>
+    <button id="stop">stop</button>
+    <script src="rubikt.js"></script>
+  </body>
+
+</html>
